@@ -1,21 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 
 <head>
-    <title>Sloth Bar Coffee</title>
-    <link rel="stylesheet" href="home.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coverflow Slider</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="home.css" />
 </head>
 
 <body>
-    <div class="top-page">
-        <a href="index.html" class="logo">Sloth Bar</a>
-        <div class="btn-top-page">
-            <button class="btn-top">About</button>
-            <button class="btn-top">Menu</button>
-            <button class="btn-top">Contact</button>
-        </div>
 
-    </div>
+    <section class="center-stage">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/images-1.png" alt="1"></div>
+                <div class="swiper-slide"><img src="images/images-2.png" alt="2"></div>
+                <div class="swiper-slide"><img src="images/images-3.png" alt="3"></div>
+                <div class="swiper-slide"><img src="images/images-4.png" alt="4"></div>
+                <div class="swiper-slide"><img src="images/images-5.png" alt="5"></div>
+                <div class="swiper-slide"><img src="images/images-6.png" alt="6"></div>
+                <div class="swiper-slide"><img src="images/images-7.png" alt="7"></div>
+                <div class="swiper-slide"><img src="images/images-8.png" alt="8"></div>
+                <div class="swiper-slide"><img src="images/images-9.png" alt="9"></div>
+                <div class="swiper-slide"><img src="images/images-10.png" alt="10"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

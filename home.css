@@ -1,50 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html,
 body {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.01)), url('images/bg.jpg');
-    background-size: cover;
-    /* ให้เต็มหน้าจอ */
+    height: 100%
 }
 
-/* สไตล์สำหรับโลโก้ */
-a.logo {
-    font-size: 50px;
-    font-weight: bold;
+body {
+    background: #111;
     color: #fff;
-    text-decoration: none;
-    margin-top: -15px;           /* เลื่อนขึ้นไป 10px */
-    display: inline-block;       /* ต้องใส่เพื่อให้ margin-top ทำงาน */
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);   /* เงาเรืองรอบตัวหนังสือ */
-    transition: 0.3s ease;    /* ทำให้ hover นุ่มนวล */
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif
 }
 
-/* เมื่อเอาเมาส์ชี้ที่ลิงก์ (hover) */
-a.logo:hover {
-    color: #491b0fd8;
+.center-stage {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 20px
 }
 
-
-.top-page {
-    display: flex;                                                /* ทำให้กล่องเป็น flex container */
-    justify-content: space-between;                               /* กระจาย h1 ซ้าย ปุ่มขวา */
-    align-items: center;                                          /* จัดแนว */
-    padding: 40px 30px 30px 100px;
+/* กล่องหลัก */
+.mySwiper {
+    width: min(1000px, 92vw);
+    height: 420px;
+    /* ปรับสูงตามการ์ด */
+    overflow: visible;
+    /* ให้การ์ดที่ล้นออกมาโผล่ได้ */
 }
 
-.btn-top {
-
-    background: rgba(255, 255, 255, 0.1);                       /* ให้มีความโปร่งใส */
-    backdrop-filter: blur(30px);                                  /* เบลอพื้นหลัง */
-    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
-    border: 2px solid rgba(255, 255, 255, 0.18);
-    padding: 10px 20px;
-    border-radius: 8px;
-    color: white;                                               /*ตัวหนังสือสีขาว */
-    cursor: pointer;
+/* การ์ดแต่ละใบ */
+.swiper-slide {
+    width: 300px;
+    /* ความกว้างการ์ด (สำคัญ!) */
+    height: 380px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .35);
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* เอฟเฟกต์เวลา hover */
-.btn-top:hover {
-    background: rgba(255, 255, 255, 0.2);                       /* โปร่งใสขึ้นนิด */
-    box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.6);          /* เงาเรืองแสง */
-    color: #eba346ad;                                           /* ตัวหนังสือเปลี่ยนเป็นเหลือง */
-    transform: scale(1.05);                                       /* ขยายขึ้นเล็กน้อย */
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* ลูกศร/จุด */
+.mySwiper .swiper-button-prev {
+    left: 10px
+}
+
+.mySwiper .swiper-button-next {
+    right: 10px
+}
+
+.mySwiper .swiper-pagination {
+    bottom: 8px
+}
+
+/* มือถือ */
+@media (max-width:640px) {
+    .mySwiper {
+        height: 70vw
+    }
+
+    .swiper-slide {
+        width: 70vw;
+        height: 64vw
+    }
 }
