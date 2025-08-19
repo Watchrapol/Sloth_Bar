@@ -1,24 +1,50 @@
 body {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('images/bg.jpg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.01)), url('images/bg.jpg');
     background-size: cover;
     /* ให้เต็มหน้าจอ */
 }
 
+/* สไตล์สำหรับโลโก้ */
+a.logo {
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    margin-top: -15px;           /* เลื่อนขึ้นไป 10px */
+    display: inline-block;       /* ต้องใส่เพื่อให้ margin-top ทำงาน */
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);   /* เงาเรืองรอบตัวหนังสือ */
+    transition: 0.3s ease;    /* ทำให้ hover นุ่มนวล */
+}
+
+/* เมื่อเอาเมาส์ชี้ที่ลิงก์ (hover) */
+a.logo:hover {
+    color: #491b0fd8;
+}
+
+
 .top-page {
-    display: flex;
-    /* ทำให้กล่องเป็น flex container */
-    justify-content: space-between;
-    /* กระจาย h1 ซ้าย ปุ่มขวา */
-    align-items: center;
-    /* จัดแนว */
-    padding: 40px 30px 30px 100px; 
+    display: flex;                                                /* ทำให้กล่องเป็น flex container */
+    justify-content: space-between;                               /* กระจาย h1 ซ้าย ปุ่มขวา */
+    align-items: center;                                          /* จัดแนว */
+    padding: 40px 30px 30px 100px;
 }
 
 .btn-top {
-    background-color: rgb(139, 94, 60);
-    color: white;
-    border: none;
+
+    background: rgba(255, 255, 255, 0.1);                       /* ให้มีความโปร่งใส */
+    backdrop-filter: blur(30px);                                  /* เบลอพื้นหลัง */
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border: 2px solid rgba(255, 255, 255, 0.18);
     padding: 10px 20px;
     border-radius: 8px;
+    color: white;                                               /*ตัวหนังสือสีขาว */
     cursor: pointer;
+}
+
+/* เอฟเฟกต์เวลา hover */
+.btn-top:hover {
+    background: rgba(255, 255, 255, 0.2);                       /* โปร่งใสขึ้นนิด */
+    box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.6);          /* เงาเรืองแสง */
+    color: #eba346ad;                                           /* ตัวหนังสือเปลี่ยนเป็นเหลือง */
+    transform: scale(1.05);                                       /* ขยายขึ้นเล็กน้อย */
 }
