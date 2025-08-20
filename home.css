@@ -169,11 +169,6 @@ body {
 }
 
 .btn {
-    display: inline-block;
-    /* กลับไป inline-block ก็ได้ */
-}
-
-.btn {
     margin-top: 20px;
     font-family: "Love Light", cursive;
     /* ใช้ฟ้อนท์เดียวกับหัวข้อ */
