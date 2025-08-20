@@ -1,0 +1,223 @@
+/* ===== Reset shadow (กันเงาซ้อน) ===== */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.no-shadow,
+.about-hero,
+.card,
+.navbar,
+.footer,
+.map-embed iframe {
+    box-shadow: none !important;
+    filter: none !important;
+}
+
+/* ===== Utilities ===== */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 32px;
+}
+
+@media (max-width: 890px) {
+    .two-col {
+        grid-template-columns: 1fr;
+    }
+}
+
+.bullet {
+    padding-left: 18px;
+}
+
+.bullet li {
+    margin: 8px 0;
+}
+
+/* ===== Hero ===== */
+.about-hero {
+    min-height: 50vh;
+    background: url('images/hero-beans.jpg') center/cover no-repeat;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.about-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.about-hero__content {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    padding: 40px 16px;
+}
+
+.about-hero h1 {
+    font-size: clamp(28px, 4.5vw, 44px);
+    margin: 0 0 10px;
+}
+
+.about-hero p {
+    font-size: clamp(16px, 2.5vw, 20px);
+    margin: 0;
+}
+
+/* ===== Sections ===== */
+.about-section {
+    padding: 64px 0;
+    background: #272727;
+}
+
+.about-section.light {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.about-image-frame {
+    place-items: center;           /* จัดกลางสองแกน */
+    overflow: hidden;              /* ให้มุมโค้งตัดรูปได้ */
+    border:1px solid #eadfd5;
+    border-radius: 2px;
+    padding: 16px;                     /* เอาช่องว่างด้านในออก */
+}
+.about-image-frame img {
+  display: block;                 /* ตัดช่องว่างบรรทัดด้านล่างของรูป */
+  height: auto;
+  width: auto;                    /* ใช้ขนาดจริงของรูป */
+  max-width: 100%;                /* ป้องกันล้นภาชนะกรณีพ่อหด */
+}
+
+/* ===== Cards (Signature Drinks) ===== */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 980px) {
+    .card-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 620px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    background:#272727;
+    border: 1px solid #eadfd5;
+    border-radius: 16px;
+    padding: 14px;
+    transition: transform .2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card h3 {
+    margin: 10px 0 6px;
+    color: #ffffff;
+}
+
+.card p {
+    color: #999999;
+}
+
+/* ===== Pills ===== */
+.pill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pill {
+    background: #f0e5d8;
+    border: 1px solid #e2d3c3;
+    color: #5b3f2a;
+    border-radius: 999px;
+    padding: 8px 14px;
+    font-size: 14px;
+}
+
+/* ===== Hours / Map ===== */
+.hours {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 420px;
+}
+
+.hours td {
+    padding: 10px 12px;
+    border-bottom: 1px dashed #decfbe;
+}
+
+.hint {
+    color: #777;
+    font-size: 14px;
+}
+
+.map-embed {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #eadfd5;
+}
+
+.map-embed iframe {
+    width: 100%;
+    height: 260px;
+    display: block;
+}
+
+/* ===== CTA ===== */
+.about-cta {
+    padding: 72px 0;
+    background: #2a201a;
+    color: #fff;
+    text-align: center;
+}
+
+.cta-inner {
+    display: grid;
+    gap: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background: #f39c12;
+    color: #21150f;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    opacity: .9;
+}
+
+/* ===== Footer ===== */
+.footer {
+    background: #1f1f1f;
+    color: #cfcfcf;
+    padding: 20px 0;
+    text-align: center;
+}
