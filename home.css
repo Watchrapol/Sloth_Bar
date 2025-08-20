@@ -160,3 +160,56 @@ body {
         height: 64vw
     }
 }
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/* ----- Button ----- */
+.button-container {
+    text-align: center;
+    /* จัดกลางแนวนอน */
+}
+
+.btn {
+    display: inline-block;
+    /* กลับไป inline-block ก็ได้ */
+}
+
+.btn {
+    margin-top: 20px;
+    font-family: "Love Light", cursive;
+    /* ใช้ฟ้อนท์เดียวกับหัวข้อ */
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    /* ตัวพิมพ์ใหญ่ทั้งหมด */
+    letter-spacing: 1px;
+    /* ระยะห่างระหว่างตัวอักษร */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* เงาเล็กน้อย */
+    text-decoration: none;
+    /* เอาเส้นขีดใต้ลิงก์ออก */
+    display: inline-block;
+    /* ให้เป็นปุ่ม */
+    width: fit-content;
+    /* ปรับขนาดตามเนื้อหา */
+    margin: 20px auto;
+    /* จัดกึ่งกลาง */
+    background-color: #f39c12;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e67e22;
+    /* เปลี่ยนสีเมื่อ hover */
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(243, 156, 18, 0.5);
+    /* เพิ่มเงาเมื่อโฟกัส */
+}
