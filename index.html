@@ -6,22 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sloth Bar</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="home.css" />
 </head>
 
 <body>
-    <header class="top-nav">
-        <a href="#" class="logo">Sloth Bar</a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="top-nav">
+        <a href="#" id="toggleSidebar" class="logo"><i class="bi bi-list"></i> Sloth Bar</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3><i class="slothbar"></i>Sloth</h3>
+        </div>
+        <ul>
+            <li><a href="#"><i class="bi bi-house-door"></i> Home</a></li>
+            <li><a href="#"><i class="bi bi-speedometer2"></i> Dashboard</a></li>
+            <li><a href="#"><i class="bi bi-table"></i> Orders</a></li>
+            <li><a href="#"><i class="bi bi-grid"></i> Products</a></li>
+            <li><a href="#"><i class="bi bi-people"></i> Customers</a></li>
+        </ul>
+    </aside>
+
     <section class="hero">
         <div class="hero-totext">
             <h1>Where Every Cup Tells a Story</h1>
@@ -54,6 +68,7 @@
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script src="slidebar.js"></script>
 </body>
 
 </html>

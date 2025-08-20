@@ -1,21 +1,65 @@
 <!DOCTYPE html>
 <html lang="th">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Sloth Bar Contact</title>
-        <link rel="stylesheet" href="contact.css" />
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <header class="top-nav">
-        <a href="#" class="logo">Sloth Bar</a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sloth Bar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
+</head>
+
+<body>
+    <nav class="top-nav">
+        <a href="#" id="toggleSidebar" class="logo"><i class="bi bi-list"></i> Sloth Bar</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3><i class="slothbar"></i>Sloth</h3>
+        </div>
+        <ul>
+            <li><a href="#"><i class="bi bi-house-door"></i> Home</a></li>
+            <li><a href="#"><i class="bi bi-speedometer2"></i> Dashboard</a></li>
+            <li><a href="#"><i class="bi bi-table"></i> Orders</a></li>
+            <li><a href="#"><i class="bi bi-grid"></i> Products</a></li>
+            <li><a href="#"><i class="bi bi-people"></i> Customers</a></li>
+        </ul>
+    </aside>
+
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <p>ติดต่อ Sloth Bar ได้ตามข้อมูลด้านล่าง หรือส่งข้อความผ่านฟอร์ม</p>
+
+        <div class="contact-info">
+            <p><ion-icon name="location-outline"></ion-icon> 123 ถนนขอนแก่น, จ.ขอนแก่น</p>
+            <p><ion-icon name="call-outline"></ion-icon> 081-234-5678</p>
+            <p><ion-icon name="mail-outline"></ion-icon> slothbar@example.com</p>
+            <p><ion-icon name="time-outline"></ion-icon> 09:00 – 20:00 น.</p>
+        </div>
+
+
+        <form class="contact-form">
+            <input type="text" placeholder="ชื่อของคุณ" required>
+            <input type="email" placeholder="อีเมลของคุณ" required>
+            <textarea placeholder="ข้อความ..." required></textarea>
+            <button type="submit">ส่งข้อความ</button>
+        </form>
+    </section>
+
+    <script src="slidebar.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+
 </html>

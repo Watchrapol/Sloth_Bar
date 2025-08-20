@@ -1,0 +1,58 @@
+.contact {
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: "Lobster", sans-serif;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;   /* เว้นระหว่างไอคอนกับข้อความ */
+}
+
+.contact-info ion-icon,
+.contact-info i {
+  font-size: 22px;
+  color: #f39c12;  /* สีทองเข้ากับร้านกาแฟ */
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 12px;
+    background: #f39c12;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #d35400;
+}
