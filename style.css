@@ -107,3 +107,11 @@ body {
 .sidebar ul li a:hover {
     color: #f39c12;
 }
+
+/* ===== Footer ===== */
+.footer {
+    background: #1f1f1f;
+    color: #cfcfcf;
+    padding: 20px 0;
+    text-align: center;
+}

@@ -176,9 +176,11 @@ img {
 }
 
 .map-embed {
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid #eadfd5;
+    place-items: center;           /* จัดกลางสองแกน */
+    overflow: hidden;              /* ให้มุมโค้งตัดรูปได้ */
+    border:1px solid #eadfd5;
+    border-radius: 2px;
+    padding: 16px;                     /* เอาช่องว่างด้านในออก */
 }
 
 .map-embed iframe {
@@ -189,7 +191,7 @@ img {
 
 /* ===== CTA ===== */
 .about-cta {
-    padding: 72px 0;
+    padding: 40px 0;
     background: #2a201a;
     color: #fff;
     text-align: center;
@@ -212,12 +214,4 @@ img {
 
 .btn:hover {
     opacity: .9;
-}
-
-/* ===== Footer ===== */
-.footer {
-    background: #1f1f1f;
-    color: #cfcfcf;
-    padding: 20px 0;
-    text-align: center;
 }
